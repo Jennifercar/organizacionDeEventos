@@ -1,0 +1,162 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin-bottom: 60px;
+     
+}
+
+body {
+    
+     font-family: 'Open Sans', sans-serif;
+     font-size: 20px;
+	 font-weight: 400;
+     background-color: rgb(98, 102, 121);
+    
+     
+}
+
+.contenedor {
+	background-image: url(/img/rosas.jpg);
+     background-size:cover;
+     height: 75vh;
+   
+}
+
+main{
+   margin-left: 20%;
+   border-top: 50px;
+ 
+}
+
+.logo {
+	font-size: 35px;
+     font-weight: 600;
+     color: #000;
+	text-decoration: none;
+     font-family: 'Dancing Script';
+     margin-top: 20px;
+}
+
+.menu  {
+	display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-top: 30px;
+     font-family: 'PT Serif', serif;
+}
+
+.menu a {
+	font-size: 22px;
+     border-bottom: 2px solid transparent;
+     margin-left: 40px;
+     color: #000;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover {
+	border-bottom: 2px solid #604877;
+}
+
+.contenedor-texto .titulo {
+     font-size: 60px;
+     font-weight: normal;
+     font-family: 'PT Serif', serif;
+     margin-bottom: 40px;
+     padding-top: 10%;
+     color: #f3ecec;
+     text-shadow: #290000 0px 0px 5px, #290000 0px 0px 10px,   #290115 0px 0px 75px;
+}
+
+.contenedor-texto .mascota {
+     font-weight: bold;
+     color: #6a54b9;
+     font-style: normal;
+}
+
+.contenedor-texto p {
+     margin-bottom: 40px;
+     line-height: 36px;
+     color: antiquewhite;
+     font-family: 'PT Serif', serif;
+     font-size: 25px;
+     text-shadow: #290000 0px 0px 5px, #290000 0px 0px 10px,   #290115 0px 0px 75px;
+}
+
+.btn-link {
+     display: inline-block;
+     padding: 10px 30px;
+	border-radius: 100px;
+     margin-right: 10px;
+     text-decoration: none;
+     background: #f2f2f2;
+}
+
+.btn-link:hover,
+.btn-link.activo {
+	color: #fff;
+	background: #5b4a9a;
+}
+
+.presentacion{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+color: aliceblue;
+font-family: 'PT Serif', serif;
+
+
+}
+
+.quieneSomos{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 80%;
+     flex-direction: column;
+     margin-top: 20px;
+     
+}
+footer{
+     color: #f3ecec;
+     margin-top: 30px;
+     box-shadow: 0 4px 30px rgb(0 0 0 / 60%);
+     display: flex;
+     justify-content: center;
+     padding-top: 30px;
+     font-family: 'PT Serif', serif;
+}
+ul{
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+}
+li{
+     margin-bottom: 20px;
+
+}
+@media screen and (max-width: 915px) {
+     main {
+          margin-left: 10px;
+          flex-direction: column;
+          text-align: center;
+     }
+     footer{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+     ul{
+          padding: 20px;
+     }
+}
