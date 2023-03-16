@@ -1,8 +1,8 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'<i class="mascota">Casamiento</i>',
-		'<i class="mascota">Fiesta de 15</i>',
-		'<i class="mascota">Cumpleaños</i>',
+		'<i class="evento">Casamiento</i>',
+		'<i class="evento">Fiesta de 15</i>',
+		'<i class="evento">Cumpleaños</i>',
 		
 	],
 

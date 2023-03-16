@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+
 header {
 	display: flex;
      align-items: center;
@@ -60,10 +61,13 @@ main{
      color: #000;
 	text-decoration: none;
 	transition: all 0.3s ease;
+     transition: all 300ms ease-out 0s;
 }
 
 .menu a:hover {
 	border-bottom: 2px solid #604877;
+     color: #e9cada;
+	font-size: 25px;
 }
 
 .contenedor-texto .titulo {
@@ -76,7 +80,7 @@ main{
      text-shadow: #290000 0px 0px 5px, #290000 0px 0px 10px,   #290115 0px 0px 75px;
 }
 
-.contenedor-texto .mascota {
+.contenedor-texto .evento {
      font-weight: bold;
      color: #6a54b9;
      font-style: normal;
@@ -128,6 +132,63 @@ font-family: 'PT Serif', serif;
      text-align: center;
      
 }
+.contenedorGaleria{
+     width: 90%;
+     max-width: 1200px;
+     overflow: hidden;
+     margin: auto;
+     padding: 60px 0;
+}
+.galeria{
+background: #f2f2f2;
+
+}
+.contenedorFotos{
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     
+}
+.imgGalery{
+     width: 30%;
+     display: block;
+     margin-bottom: 30px;
+     cursor: pointer;
+}
+.lightbox{
+     position: fixed;
+     background: rgba(0, 0, 0, .5);
+     width: 100%;
+     height: 100%;
+     top:0;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transform:translate(100%) ;
+     transition: transform .2s ease-in-out;
+
+}
+.show{
+     transform: translate(0);
+}
+.agregarImg{
+     width: 60%;
+     border-radius: 10px;
+     transform: scale(0);
+     transition: transform .3s .2s;
+}
+.showImage{
+     transform: scale(1);
+}
+
+.close{
+     position: absolute;
+     top:35px;
+     right: 55px;
+     width: 40px;
+     cursor: pointer;
+}
 footer{
      color: #f3ecec;
      margin-top: 30px;
@@ -142,9 +203,18 @@ ul{
      display: flex;
      flex-direction: column;
 }
+ul:hover{
+     font-size: 25px;
+}
 li{
      margin-bottom: 20px;
+     transition: all 300ms ease-out 0s;
 
+}
+li:hover{
+     color: #e9cada;
+	font-size: 30px;
+	
 }
 @media screen and (max-width: 915px) {
      main {
